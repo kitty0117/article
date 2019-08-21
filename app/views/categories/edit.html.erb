@@ -1,0 +1,14 @@
+<%= form_for(@category) do |c|%>
+
+<%= c.label :title %>
+<%= c.text_field :title, class: 'form-control' %>
+
+<%= c.label :wrapup %>
+<%= c.text_field :wrapup, class: 'form-control' %>
+
+<%= c.submit %>
+
+<%= link_to '削除', category_path, method: :delete %>
+
+
+<% end %>
